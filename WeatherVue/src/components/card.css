@@ -1,0 +1,16 @@
+.card-object {
+    width: 325px;
+    height: 180px;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 10px;
+    color:black;
+}
+
+.centered-text {
+    color: grey;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+  }

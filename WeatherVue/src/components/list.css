@@ -1,0 +1,36 @@
+.data-list {
+  position: absolute;
+  top: 63%; 
+  left: 58%; 
+  width: 75%; 
+  height: 65%; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  transform: translate(-50%, -50%); 
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  flex: 1;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: 250;
+  color: black;
+}
+
+.title {
+  font-weight: bold;
+  color: white;
+}
+
+.buttons-container {
+  margin-top: 600px;
+  position: relative;
+  z-index: 2;
+}
+
+.buttons-container input[type="text"],
+.buttons-container button {
+  margin-right: 10px;
+}
