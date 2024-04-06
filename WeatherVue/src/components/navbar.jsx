@@ -1,21 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
-  const refreshPage = () => {
-    window.location.reload();
-  };
-
   return (
     <nav>
       <ul style={{ listStyleType: 'none', padding: 0 }}>
         <li style={{ margin: '10px 0' }}>
-          <a href="#" style={{ fontSize: '30px', fontWeight: '400', color: 'black' }} onClick={refreshPage}>🏠 Home</a>
+          <Link to="/" style={{ fontSize: '30px', fontWeight: '400', color: 'black' }}>🏠 Home</Link>
         </li>
         <li style={{ margin: '10px 0' }}>
-          <a href="#" style={{ fontSize: '30px', fontWeight: '400', color: 'black'}} onClick={refreshPage}>🔍 Search</a>
+          <Link to="/" style={{ fontSize: '30px', fontWeight: '400', color: 'black'}}>🔎 Search</Link>
         </li>
         <li style={{ margin: '10px 0' }}>
-          <a href="#" style={{ fontSize: '30px', fontWeight: '400', color: 'black'}} onClick={refreshPage}>🛈 About</a>
+          <Link to="/about" style={{ fontSize: '30px', fontWeight: '400', color: 'black'}}>🛈 About</Link>
         </li>
       </ul>
     </nav>

@@ -24,3 +24,33 @@
   top: 5%; 
   left: 20.5%; 
 }
+
+.tempChart {
+  background-color: rgba(255, 255, 255, 0.5); 
+  width: 400px;
+  height: 65%;
+  display: flex; 
+  position: absolute;
+  top: 30%; 
+  left:73.5%; 
+  border-radius: 15px;
+}
+
+.summary {
+  position: absolute;
+  top: 50%; 
+  left:60%; 
+  width: 51%; 
+  height: 50%; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  transform: translate(-50%, -50%); 
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  position: absolute;
+  color: black;
+  font-weight: 300;
+}

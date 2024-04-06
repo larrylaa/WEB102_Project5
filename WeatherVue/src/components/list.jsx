@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './list.css';
+import { Link } from 'react-router-dom';
 
 var maxWindSpeed = -Infinity;
 var maxTemp = -Infinity;
@@ -92,6 +93,15 @@ function List() {
             <div key={index}>{day.wind_spd} m/s</div>
           ))}
         </div>
+
+        <div className="column">
+          <div className="title">Link</div>
+          {filteredData.map((day, index) => (
+          <div><Link key={index} to={`/info/${day.datetime}`}>🔗</Link></div>
+          ))}
+        </div>
+
+        
       </div>
 
       <div className="buttons-container">
